@@ -5,6 +5,13 @@ public class Student {
     private double sumOfGrades;
     private int totalOfGrades;
 
+    public Student(String name, double grade1, double grade2, double grade3) {
+        this.name = name;
+        evaluates(grade1);
+        evaluates(grade2);
+        evaluates(grade3);
+    }
+
     public String getName() {
         return name;
     }
